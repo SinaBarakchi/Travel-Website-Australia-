@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+    display: flex !important;
+}
+/* ================================NAVBAR==================================== */
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 50px;
+    position: relative;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    text-decoration-style: none;
+}
+.navbar{
+    position: relative;
+    left: -120px;
+
+}
+.nav-list{
+    margin-top: 13px;
+    
+}
+.nav-list li{
+    margin-right: 35px;
+    font-size: 1.3em;
+    display: inline-block;
+    transition: color .2s;
+}
+.nav-list li:hover{
+    color: rgb(185, 79, 79);
+    cursor: pointer;
+}
+.header-icon{
+    display: flex;
+    position: absolute;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right: 45px;
+    background-color: #FF4A52;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-icon i{
+    color: aliceblue;
+}
+.header-logo{
+    position: relative;
+    padding: 0;
+    margin-right: 0;
+    left: -60px;
+}
+.burger-btn{
+    width: 45px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#1ec6b6 ;
+    border: 0;
+}
+/* ===============================SLIDER============================ */
+
+.slider{
+    background-image: url("../images/banner2.png");
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+    
+    
+}
+
+.slider-title{
+    font-size: 8vw;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    color: white;
+    line-height: 10vw;
+}
+.explore-button button{
+    border-radius: 5px;
+    font-size: 1.7vw;
+    /* width: 10vw; */
+    background-color: #1ec6b6;
+    border: 0;
+    /* height: 6vw; */
+    color: white;
+    font-family: "Rubik", sans-serif;
+    padding: 1vw 1.5vw;
+}
+.slider-text{
+    height: 45vw;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+    justify-content: space-around;
+}
+.middle-content{
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: white;
+}
+/* =======================================SEARCHBAR======================================= */
+.searchbar{
+    background-color: #040E27;
+    width: 100%;
+    align-items: center;
+    padding: 28px 0;
+    column-gap: 10px;
+
+}
+.searchbar p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 45px;
+}
+.search-form{
+    column-gap: 20px;
+    align-items: center;
+}
+.search-form input[type="text"]{
+    padding: 17px 3.5vw;
+    background-color: transparent;
+    border: 1px solid #363E52;
+    border-radius: 5px;
+    outline: 0;
+}
+.searchbar-btn{
+    padding: 17px 3vw;
+    border-radius: 5px;
+    border: 0;
+    background-color: #FF4A52;
+    color: white;
+
+}
+/* ========================POPULAR_DESTINATION=============================== */
+.popular-text{
+    width: 100%;
+    margin-top: 120px;
+    text-align: center;
+}
+.popular-text h3{
+    font-size: 38px;
+    margin-bottom: 17px;
+    font-weight: 400;
+}
+.popular-text p{
+    font-size: 16px;
+    color: #7A838B;
+    font-weight: 300;
+}
+.countries-place{
+    /* margin: 100px 35px 0 35px; */
+    margin-top: 110px;
+    width: 100%;
+    flex-flow: wrap row;
+    gap: 20px;
+    justify-content: center;
+}
+.country{
+    cursor: pointer;
+    width: 380px;
+    height: 280px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    transition: transform .2s;
+}
+.country:hover{
+    box-shadow: black;
+    transform: translateY(-10px);
+}
+.country:hover .popular-image-info h3{
+ color: #FF4A52;
+}
+.country:hover .popular-image-info button{
+    background-color: #FF4A52;
+    color: #ffffff;
+}
+.popular-image-info{
+    /* display: flex; */
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+}
+.popular-image-info button{
+    border-radius: 20px;
+    background-color: #1ec6b6;
+    color: white;
+    margin-left: 17px;
+    border: 0;
+    font-size: 12px;
+    padding: 7px 12px;
+}
+.country h3{
+    font-size: 22px;
+    color: white;
+    transition:all .2s;
+    font-weight: 400;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to bottom, rgba(4, 14, 39, 0), rgba(4, 14, 39, 0.7));
+    border-radius: 5px;
+}
+.italy{
+    background-image:url("../images/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.brazil{
+    background-image: url("../images/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.america{
+    background-image: url("../images/3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nepal{
+    background-image: url("../images/4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.maldives1{
+    background-image: url("../images/5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.maldives2{
+    background-image: url("../images/6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ==================================NEWSLETTER=========================================== */
+.Newletter{
+    margin: 20px 0;
+    background-image: url(../images/newsletter.png);
+    background-size: cover;
+    background-position: 60% 60%;
+    position: relative;
+    justify-content: center;
+    /* padding: 20px 0; */
+    z-index: 100;
+    height: 250px;
+    align-items: center;
+}
+.input-text{
+    z-index: 100;
+    text-align: center;
+}
+.Newletter h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.Newletter p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #AAB1B7;
+}
+.newsletter-form{
+    z-index: 100;
+}
+.newsletter-form form input{
+    /* height: 100%; */
+    height: 50px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.newsletter-form form{
+    column-gap: 10px;
+}
+.newsletter-form form input[type="text"]{ 
+    /* height: 50px; */
+    margin-left: 10px;
+    padding-left: 15px;
+    width: 40vw;
+}
+.newsletter-form form input[type="button"]{
+
+    padding: 0  15px;
+    background-color: #FF4A52;
+    color: white;
+    font-size: 16px;
+}
+.newsletter-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #040E27;
+    opacity: .7;
+    z-index: 1;
+}
+/* ==================================================================== */
+.video-container{
+    width: 100%;
+    /* height: 400px; */
+    padding: 130px 0;
+    background-image:url("../images/video.png") ;
+    background-size: 100% 100%;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+   
+}
+.video-middle-content{
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.video-middle-content h1{
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.video-btn{
+    border: 0;
+    border-radius: 100%;
+    color: white;
+    background-color: #1ec6b6;
+    /* width: 50px; */
+    /* height: 30px; */
+    padding: 35px 38px;
+    transition: all .5s;
+}
+.video-btn:hover{
+    background-color: #FF4A52;
+}
+.video-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #040E27;
+    opacity: .2;
+    z-index: -1;
+}
+button{
+    cursor: pointer;
+}
+/* ======================FOOTER==================================== */
+footer{
+    width: 100%;
+    background-color: #040E27;
+    /* height: 250px; */
+}
+.innerfooter{
+    justify-content: space-evenly;
+    padding-top: 40px;
+    column-gap: 150px;
+    padding-bottom: 40px;
+}
+footer p{
+    color: #AAB1B7;
+}
+footer h3{
+    color: white;
+}
+.contact-us img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contacts{
+    flex-flow: wrap column;
+    row-gap: 10px;
+}
+.footer-destination{
+    flex-flow:wrap column;
+    justify-self: flex-start;
+    row-gap: 20px;
+}
+.footer-destination h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+}
+.line-container{
+    column-gap: 100px;
+}
+.lines{
+    display: flex;
+    flex-flow: column;
+    row-gap: 20px;
+    /* gap: 50px; */
+}
+.lines a{
+    color: #AAB1B7;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    /* column-gap: 50px; */
+}
+
+
+
+
+
+
+
+.show{
+    display: block!important;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+.show li{
+    display: block;
+}
+
+
+/* Responsive Searchbar */
+
+
+ @media (max-width:1199.98px){
+     .searchbar{
+         /* margin-top: 30px; */
+         flex-direction: column;
+         row-gap: 20px;
+         /* text-align: center; */
+     }
+    .search-form{
+        flex-direction: column;
+        width: 100%;
+        row-gap: 20px;
+    }
+    .search-form input{
+        width: 80%;
+        padding:17px 0 !important;
+    }
+ }
+
+
+
+/* Responsive Navbar */
+
+
+@media (max-width:1199.98px)
+{
+    .header-icon{
+        width: 45px;
+    }
+}
+@media (max-width:991.98px){
+    .header-logo{
+        left: -20px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .burger-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* bottom: 70px; */
+    }
+    .flex-container{
+        display: block;
+    }
+    /* .header-icon{
+        bottom: 70px;
+    }
+     */
+    .Newletter{
+        flex-direction: column;
+    row-gap: 10px;
+    }
+    .newsletter-form form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .frm-btn{
+        /* padding: 0 !important; */
+        width: 40vw;
+
+    }
+    .txt-inp{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    /* ============================== */
+    .innerfooter{
+        flex-direction: column;
+        margin-left: 30px;
+        row-gap: 20px;
+    }
+    .contact-us img{
+        width: 210px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
